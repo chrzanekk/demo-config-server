@@ -1,4 +1,4 @@
-discovery-service
+
 eureka:
   client:
     register-with-eureka: true
@@ -7,3 +7,8 @@ eureka:
       default-zone: http://discovery-service:8761/eureka
     instance:
       hostname: discovery-service
+
+management:
+  zipkin:
+    tracing:
+      endpoint: http://zipkin:9941
