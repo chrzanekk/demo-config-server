@@ -2,11 +2,12 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
+    enabled: true
     service-url: 
-      default-zone: http://discovery-service:8761/eureka
+      default-zone: http://localhost:8761/eureka
     instance:
-      hostname: discovery-service
+      hostname: localhost
 management:
   zipkin:
     tracing:
-      endpoint: http://zipkin:9941
+      endpoint: http://localhost:9941
